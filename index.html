@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Flaticons Parallax</title>
+</head>
+<body>
+    <section class="banner">
+        <div class="container">
+            <div id="scene">
+                <h2 id="text">
+                    <span data-depth-y="2">S</span>
+                    <span data-depth-y="-6">u</span>
+                    <span data-depth-y="5">m</span>
+                    <span data-depth-y="-8">m</span>
+                    <span data-depth-y="-3">e</span>
+                    <span data-depth-y="6">r</span>
+                </h2>
+                <div class="layer zIndexAbove" data-depth="-0.5" style="--i:100;--j:280"><img src="images/cone-ice-cream.png" alt="" srcset=""></div>
+                <div class="layer zIndexAbove" data-depth="0.75" style="--i:150;--j:380"><img src="images/ice-cream.png" alt="" srcset=""></div>
+                <div class="layer" data-depth="1" style="--i:230;--j:280"><img src="images/piece-of-cake.png" alt="" srcset=""></div>
+                <div class="layer zIndexAbove" data-depth="-0.25" style="--i:450;--j:350"><img src="images/popsicle.png" alt="" srcset=""></div>
+                <div class="layer" data-depth="0.625" style="--i:500;--j:280"><img src="images/strawberry.png" alt="" srcset=""></div>
+                <div class="layer" data-depth="-0.375" style="--i:300;--j:350"><img src="images/watermelon-full.png" alt="" srcset=""></div>
+                <div class="layer" data-depth="0.5" style="--i:400;--j:280"><img src="images/watermelon.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        var text = document.getElementById('text');
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(text);
+        var parallaxInstance = new Parallax(scene);
+    </script>
+</body>
+</html>
